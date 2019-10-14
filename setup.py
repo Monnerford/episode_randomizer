@@ -7,5 +7,5 @@ setup(
     author='Nicolas Monner Sans',
     author_email='nicomonner@gmail.com',
     url='headfirstlabs.com',
-    py_modules=['randomizer']
+    py_modules=['episode_randomizer']
 )
