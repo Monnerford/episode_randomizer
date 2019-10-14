@@ -39,6 +39,7 @@ def episode_randomizer(path='.', save_df=True, open_ep=False):
     # Write DF to folder
     if save_df:
         df.to_csv(f'{path}/episodes.csv', sep='|')
+    episode = df.sample(1)
     if open_ep:
-        open_file(df.sample(1).rel_path.values[0])
-    return df.sample(1)
+        open_file(episode.rel_path.values[0])
+    return episode
